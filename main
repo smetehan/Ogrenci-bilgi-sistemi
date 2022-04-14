@@ -1,0 +1,38 @@
+
+
+public class project {
+
+
+    public static void main(String[] args) {
+
+Teacher t1 = new Teacher("mahmut","5465877889","TRH");
+
+Teacher t2=new Teacher("Ali","6549613","FZK");
+Teacher t3=new Teacher("Kulyutmaz","6413165","BIO");
+
+Course tarih=new Course("Tarih Yazili","101","TRH");
+tarih.addTeacher(t1);
+Course tarihsozlu=new Course("Tarih Sozlu","101","TRH");
+tarihsozlu.addTeacher(t1);
+Course fizik=new Course("Fizik Yazili","101","FZK");
+        fizik.addTeacher(t2);
+Course fiziksozlu=new Course("Fizik Sozlu","101","FZK");
+        fiziksozlu.addTeacher(t2);
+Course biyo=new Course("Biyo Yazili","101","BIO");
+biyo.addTeacher(t3);
+Course biyosozlu=new Course("Biyo Sozlu","101","BIO");
+biyosozlu.addTeacher(t3);
+
+
+Student s1=new Student("Saban","123","4",tarih,fizik,biyo,tarihsozlu,fiziksozlu,biyosozlu);
+s1.addBulkExemNote(50 ,40,30);
+s1.addSozlu(40,50,40);
+s1.isPass();
+
+    }
+
+
+}
+
+
+
